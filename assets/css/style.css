@@ -458,7 +458,7 @@ html {
         transform: translateY(0);
     }
 }
-hr {
+.cut-content {
     margin:auto ; 
     margin-top: 80px;
     width: 450px ;
