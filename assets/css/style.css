@@ -458,3 +458,9 @@ html {
         transform: translateY(0);
     }
 }
+hr {
+    margin:auto ; 
+    margin-top: 80px;
+    width: 450px ;
+    border:0.3px solid #ccc;
+}
