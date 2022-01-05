@@ -222,7 +222,7 @@
                 </label>
                 <input id="send" type="email" class="modal-input" placeholder="Email hoặc số điện thoại">
                 
-                <button class="nhap-hoc js-successful">
+                <button class="nhap-hoc js-successful" onclick="nhaphoc()">
                     Nhập học <i class="ti-check"></i>
                 </button>
             </div>
@@ -264,12 +264,16 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation()
         })
-
-        function nhapHocXong(){
-            alert("Bạn đã nhập học thành công hãy đợi thông báo của trường qua email hoặc số điện thoại của bạn")
+        function nhaphoc(){
+            user = document.getElementById("user").value;
+            email = document.getElementById("send").value;
+            if(user==""||email==""){
+                window.alert("Vui lòng điền vào biểu mẫu bên dưới");
+            }
+            else{
+                window.alert("Bạn đã nhập học thành công hãy đợi thông báo của trường qua email hoặc số điện thoại của bạn");
+            }
         }
-
-        successful.addEventListener('click', nhapHocXong)
     </script>
 </body>
 </html>
