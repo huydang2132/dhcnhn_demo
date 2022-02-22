@@ -1,5 +1,4 @@
-*
-{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -103,10 +102,14 @@ html {
     display: block;
 }
 
-#nav .subnav li:hover a,
-#nav > li:hover > a {
-    color: rgb(0, 0, 0);
+#nav .subnav li:hover,
+#nav > li:hover{
     background-color: rgb(245, 245, 80);
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: rgb(0, 0, 0);
 }
 
 #nav .subnav {
@@ -130,15 +133,27 @@ html {
     font-size: 12px;
 }
 
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-bt {
     float: right;
     line-height: 46px;
 }
 
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 17px;
     padding: 0 20px;
+}
+#header .menu-icon:hover{
+    color: black;
 }
 
 #header .search-bt:hover {
@@ -146,13 +161,17 @@ html {
     cursor: pointer;
 }
 
+#header .mobile-menu-btn:hover{
+    background-color: rgb(245, 245, 80)
+}
+
 #slider {
-    position: relative;    
+    position: relative;  
 } 
 
 #slider img {
     width: 100%;
-    background: top center / cover no-repeat;
+    padding-top: 20px;
 }
 
 #slider .text-content {
@@ -178,9 +197,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -346,6 +368,7 @@ html {
 }
 
 .modal {
+    padding: 0 5px;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -461,6 +484,6 @@ html {
 .cut-content {
     margin:auto ; 
     margin-top: 80px;
-    width: 450px ;
+    width: 40% ;
     border:0.3px solid #ccc;
 }

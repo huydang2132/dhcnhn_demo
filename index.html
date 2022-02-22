@@ -11,6 +11,7 @@
     <link href="./assets/img/logo-truong-cn.png" rel="shortcut icon" type="image/png">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -18,12 +19,12 @@
         <!-- Begin: Header -->
         <div id="header">
                 <ul id="nav">
-                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#" >Trang chủ</a></li>
                     <li><a href="#gioi-thieu">Giới thiệu</a></li>
                     <li><a href="#thong-tin">Thông tin</a></li>
                     <li><a href="#lien-he">Liên hệ</a></li>
                     <li>
-                        <a href="#co-so">
+                        <a href="#">
                             Cơ sở
                             <i class="nav-arrow-down ti-angle-down"></i>
                         </a>
@@ -36,6 +37,9 @@
                 </ul>
                 <div class="search-bt">
                     <i class=" search-icon ti-search"></i>
+                </div>
+                <div id="mobile-menu" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
                 </div>
         </div>
         <!-- End: Header -->
@@ -272,6 +276,36 @@
             }
             else{
                 window.alert("Bạn đã nhập học thành công hãy đợi thông báo của trường qua email hoặc số điện thoại của bạn");
+            }
+        }
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        //Dong mo mobile menu
+        mobileMenu.onclick = function(){
+            var isClose = header.clientHeight === headerHeight;
+            if(isClose){
+                header.style.height = 'auto';
+            }
+            else{
+                header.style.height = null;
+            }
+        }
+        //Auto dong khi click
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for(var i=0 ; i<menuItems.length ; i++){
+            var menuItem = menuItems[i];
+
+            
+
+            menuItem.onclick = function(){
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu){
+                    event.preventDefault();
+                }
+                else{
+                    header.style.height = null;
+                }
             }
         }
     </script>
