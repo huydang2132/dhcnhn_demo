@@ -4,7 +4,12 @@
 }
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-
+    .send-tab{
+        width: 100%;
+    }
+    .mode-mobi{
+        padding: 0 5px;
+    }
 }
 /* Mobile */
 @media (max-width: 740px) {
@@ -41,5 +46,23 @@
     .col-third{
         width: 100%;
         padding: 20px 0;
+    }
+    .m-col-full{
+        width: 100%;
+    }
+    .contact-infor{
+        padding-bottom: 20px;
+    }
+    .mobi-name{
+        padding-bottom: 10px;
+    }
+    .co_so-btn{
+        width: 100%;
+    }
+    .f-text-head{
+        font-size: 10px;
+    }
+    .mode-mobi{
+        padding: 0 5px;
     }
 }

@@ -29,9 +29,9 @@
                             <i class="nav-arrow-down ti-angle-down"></i>
                         </a>
                         <ul class="subnav">
-                            <li><a href="#co-so">Trụ sở chính</a></li>
-                            <li><a href="#co-so">Cơ sở 2</a></li>
-                            <li><a href="#co-so">Cơ sở 3</a></li>
+                            <li><a href="#co-so1">Trụ sở chính</a></li>
+                            <li><a href="#co-so2">Cơ sở 2</a></li>
+                            <li><a href="#co-so3">Cơ sở 3</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -48,8 +48,8 @@
         <div id="slider">
             <img src="./assets/img/haui_nhon.jpg" alt="HaUI">
             <div class="text-content">
-                <h2 class="text-heading">HaUI</h2>
-                <div class="text-body">Đại học Công Nghiệp Hà Nội</div>
+                <h2 class="text-heading f-text-head">HaUI</h2>
+                <div class="text-body f-text-head">Đại học Công Nghiệp Hà Nội</div>
             </div>
         </div>
         <!-- End: Anh bia -->
@@ -109,34 +109,35 @@
             <!-- End: Thong tin -->
 
         <!-- Begin: Co so -->
-        <div id="co-so" class="co_so-section">
+        <div class="co_so-section">
             <div id="content">
             <div class="content-section">
                 <h2 class="section-heading text-while">CƠ SỞ</h2>
                 <p class="section-sub-heading text-while">Cơ sở đào tạo</p>
                 <div class="row co_so-list">
-                    <div class="col  col-third">
+                    <div id="co-so1" class="col  col-third">
                         <img src="./assets/img/co_so_1.jpg" alt="KHU A" class="co_so-img">
                         <div class="co_so-body">
                             <h3 class="co_so-heading">Trụ sở chính</h3>
-                            <p class="co_so-add">Số 298 đường Cầu Diễn, quận Bắc Từ Liêm, thành phố Hà Nội.</p>
+                            <p class="co_so-add m-col-full">Số 298 đường Cầu Diễn, quận Bắc Từ Liêm, thành phố Hà Nội.</p>
                             <button class="co_so-btn js-nhap-hoc">Nhập học</button>
                         </div>
                     </div>
 
-                    <div class="col col-third">
+                    <div id="co-so2" class="col col-third">
                         <img src="./assets/img/cong_khu_b.jpg" alt="KHU B" class="co_so-img">
                         <div class="co_so-body">
                             <h3 class="co_so-heading">Cơ sở 2</h3>
-                            <p class="co_so-add">Phường Tây Tựu, quận Bắc Từ Liêm, thành phố Hà Nội.</p>
+                            <p class="co_so-add m-col-full">Phường Tây Tựu, quận Bắc Từ Liêm, thành phố Hà Nội.</p>
                             <button class="co_so-btn js-nhap-hoc">Nhập học</button>
                         </div>
+                    </div>
 
-                    </div><div class="col col-third">
+                    <div id="co-so3" class="col col-third">
                         <img src="./assets/img/co_khu_c.jpg" alt="KHU C" class="co_so-img">
                         <div class="co_so-body">
                             <h3 class="co_so-heading">Cơ sở 3</h3>
-                            <p class="co_so-add">Phường Lê Hồng Phong, xã Phù Vân, thành phố Phủ Lý, tỉnh Hà Nam.</p>
+                            <p class="co_so-add m-col-full">Phường Lê Hồng Phong, xã Phù Vân, thành phố Phủ Lý, tỉnh Hà Nam.</p>
                             <button class="co_so-btn js-nhap-hoc">Nhập học</button>
                         </div>
 
@@ -155,29 +156,29 @@
                 <p class="section-sub-heading">Phản ánh vấn đề</p>
                 
                 <div class="row contact-content">
-                    <div class="col col-second contact-infor">
+                    <div class="col col-second contact-infor m-col-full">
                         <p><i class="ti-location-pin"></i>298 Cầu Diễn, Bắc Từ Liêm, Hà Nội</p>
-                        <p><i class="ti-mobile"></i>Điện thoại: 84-24 37655 121</p>
-                        <p><i class="ti-email"></i>Email: dhcnhn@haui.edu.vn</p>
+                        <p><i class="ti-mobile"></i>Điện thoại: <a href="tel:+842437655121">84-24 37655 121</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:dhcnhn@haui.edu.vn">dhcnhn@haui.edu.vn</a></p>
                         
                     </div>
-                    <div class="col col-second contact-form">
+                    <div class="col col-second contact-form m-col-full">
                         <form action="">
                             <div class="row ">
-                                <div class="col col-second ">
+                                <div class="col col-second m-col-full mobi-name">
                                     <input type="text" name="" id="" placeholder="Tên" required class="form-control">
                                 </div>
-                                <div class="col col-second">
+                                <div class="col col-second m-col-full">
                                     <input type="email" name="" id="" placeholder="Email" required class="form-control">
                                 </div>
                             </div>
                             
                             <div class="row mt-10">
-                                <div class="col col-full">
+                                <div class="col col-full m-col-full">
                                     <input type="text" name="" id="" placeholder="Vấn đề cần phản ánh" required class="form-control">
                                 </div>
                             </div>
-                            <input type="submit" class="form-submit mt-16" value="Gửi">
+                            <input type="submit" class="form-submit mt-16 m-col-full send-tab" value="Gửi">
                         </form>
                     </div>
                 </div>
@@ -190,12 +191,12 @@
         <!-- Begin: Footer -->
         <div id="footer">
             <div class="socials-list">
-                <a href=""><i class="ti-facebook"></i></a>
-                <a href=""><i class="ti-instagram"></i></a>
-                <a href=""><i class="ti-github"></i></a>
-                <a href=""><i class="ti-pinterest"></i></a>
-                <a href=""><i class="ti-twitter-alt"></i></a>
-                <a href=""><i class="ti-youtube"></i></a>
+                <a href="https://www.facebook.com/DHCNHN.DCN.HaUI"><i class="ti-facebook mode-mobi"></i></a>
+                <a href="https://www.instagram.com/hauizone/"><i class="ti-instagram mode-mobi"></i></a>
+                <a href=""><i class="ti-github mode-mobi"></i></a>
+                <a href=""><i class="ti-pinterest mode-mobi"></i></a>
+                <a href=""><i class="ti-twitter-alt mode-mobi"></i></a>
+                <a href="https://www.youtube.com/c/HaUITV"><i class="ti-youtube mode-mobi"></i></a>
             </div>
             <p class="copyright">Made by <a href="https://www.facebook.com/huydang2132" target="_blank" style="color: #333">Đặng Đình Huy</a></p>
         </div>
